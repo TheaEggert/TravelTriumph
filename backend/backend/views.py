@@ -18,3 +18,26 @@ def city_list(request):
             serializer.save()
             return JsonResponse(serializer.data, status=201)
         return Response(serializer.errors, status=400)
+
+@api_view(['GET', 'PUT', 'DELETE'])
+def city_detail(request, pk):
+    
+        try:
+            city = City.objects.get(pk=pk)
+        except City.DoesNotExist:
+            return Response(status=404)
+    
+        if request.method == 'GET':
+            serializer = CitySerializer(city)
+            return Response(serializer.data)
+    
+        elif request.method == 'PUT':
+            serializer = CitySerializer(city, data=request.data)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data)
+            return Response(serializer.errors, status=400)
+    
+        elif request.method == 'DELETE':
+            city.delete()
+            return Response(status=204)
