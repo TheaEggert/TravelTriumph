@@ -19,6 +19,6 @@ from backend import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cities/', views.city_list),
-    path('cities/<int:pk>/', views.city_detail),
+    path('api/cities/', views.city_list),
+    path('api/cities/<int:pk>/', views.city_detail),
 ]
