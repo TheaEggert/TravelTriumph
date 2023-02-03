@@ -8,7 +8,7 @@ import { styled } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import { getCities } from '../service';
 
-export default function Selection({setAppSelectedCity, setAppDescription, setCitySelected}) {
+export default function Selection({setAppDescription, setCitySelected, setLatitude, setLongitude}) {
   const [selectedCity, setSelectedCity] = useState('');
   const [cityList, setCityList] = useState([]);
 
@@ -29,10 +29,11 @@ export default function Selection({setAppSelectedCity, setAppDescription, setCit
     for (let i = 0; i < cityList.length; i += 1) {
       if (cityList[i].label === event.target.value) {
         setAppDescription(cityList[i].description);
+        setLatitude(cityList[i].latitude);
+        setLongitude(cityList[i].longitude);
       }
     }
     setSelectedCity(event.target.value);
-    setAppSelectedCity(event.target.value);
     setCitySelected(true);
   };
 

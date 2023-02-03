@@ -3,12 +3,14 @@ import { MdAirplaneTicket } from 'react-icons/md';
 import './App.css';
 import Selection from './components/Selection';
 import Description from './components/Description';
+import Weather from './components/Weather';
 
 function App() {
 
-  const [appSelectedCity, setAppSelectedCity] = useState('');
   const [appDescription, setAppDescription] = useState('');
   const [citySelected, setCitySelected] = useState(false);
+  const [latitude, setLatitude] = useState(0);
+  const [longitude, setLongitude] = useState(0);
 
   return (
     <div className="App">
@@ -19,10 +21,16 @@ function App() {
         TravelTriumph
       </header>
       <div style={{marginTop: "10px"}}>
-        <Selection setAppSelectedCity={setAppSelectedCity} setAppDescription={setAppDescription} setCitySelected={setCitySelected} />
+        <Selection
+        setAppDescription={setAppDescription}
+        setCitySelected={setCitySelected}
+        setLatitude={setLatitude}
+        setLongitude={setLongitude}
+        />
       </div>
       <div className='description'>
         {citySelected && <Description appDescription={appDescription}/>}
+        {citySelected && <Weather latitude={latitude} longitude={longitude} />}
       </div>
     </div>
   );

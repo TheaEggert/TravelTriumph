@@ -1,6 +1,3 @@
-// get an individual city that matches the label
-
-
 export default function Description({appDescription}) {
 
     return(
