@@ -3,7 +3,8 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
+  width: 20vmin;
   pointer-events: none;
 }
 
@@ -14,18 +15,32 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: #282c34; */
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.App-name {
+  /* background-color: #282c34; */
+  min-height: 0vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +50,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
 }
