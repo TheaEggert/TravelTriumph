@@ -8,16 +8,18 @@ export default function Weather({latitude, longitude}) {
     const [temp, setTemp] = useState([]);
     const [hi, setHi] = useState([]);
     const [lo, setLo] = useState([]);
+    const [icon, setIcon] = useState([]);
     const apiKey = process.env.REACT_APP_API_KEY;
     const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
     // asynchronous function to fetch data from the API
     const fetchData = React.useCallback(async () => {
         const result = await axios(apiURL);
-        setConditions(result.data.weather[0].description);
+        setConditions(result.data.weather[0].main);
         setTemp(Math.round(result.data.main.temp));
         setLo(Math.round(result.data.main.temp_min));
         setHi(Math.round(result.data.main.temp_max));
+        setIcon(result.data.weather[0].icon);
     }, [apiURL]);
 
     React.useEffect(() => {
@@ -26,7 +28,9 @@ export default function Weather({latitude, longitude}) {
 
     return(
         <div>
-            <div style={{ color: "GrayText", marginTop: "30px" }}>Weather</div>
+            <div style={{ color: "GrayText", marginTop: "30px" }}>Current weather</div>
+            <br></br>
+            <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="weather icon" />
             <div>
                 <br></br>
                 {conditions}

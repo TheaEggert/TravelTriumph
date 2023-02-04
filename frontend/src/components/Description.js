@@ -1,11 +1,13 @@
 export default function Description({appDescription}) {
 
     return(
-        <div style={{textAlign: "left"}}>
+        <div>
             <div style={{ color: "GrayText", marginTop: "30px" }}>
                 Description
             </div>
-            <p style={{ marginTop: "30px" }}>{appDescription}</p>
+            <div style={{ textAlign: "left", marginTop: "30px", wordWrap: "break-word", width: "400px" }}>
+                {appDescription}
+            </div>
         </div>
     );
 }
