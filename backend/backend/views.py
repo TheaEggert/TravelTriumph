@@ -11,7 +11,7 @@ def city_list(request):
     if request.method == 'GET':
         cities = City.objects.all()
         serializer = CitySerializer(cities, many=True)
-        return Response({'cities': serializer.data})
+        return Response({'cities': serializer.data}) # ommitted HTTP 200 because sent by default
 
     # Add a new city
     elif request.method == 'POST':
@@ -33,7 +33,7 @@ def city_detail(request, pk):
         # Get a city's data
         if request.method == 'GET':
             serializer = CitySerializer(city)
-            return Response(serializer.data)
+            return Response(serializer.data) # ommitted HTTP 200 because sent by default
     
         # Update a city's data
         elif request.method == 'PUT':
