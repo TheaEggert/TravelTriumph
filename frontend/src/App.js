@@ -13,10 +13,10 @@ function App() {
   const [longitude, setLongitude] = useState(0);
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div style={{textAlign: "center"}}>
+      <div className="App-header">
         <MdAirplaneTicket className='App-logo' />
-      </header>
+      </div>
       <header className="App-name">
         TravelTriumph
       </header>

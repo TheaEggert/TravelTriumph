@@ -1,9 +1,11 @@
+// Refactor this file
+
 import React, { useState } from 'react';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import '../styles/Selection.css';
+import '../Selection.css';
 import { styled } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import { getCities } from '../service';
@@ -73,7 +75,6 @@ export default function Selection({setAppDescription, setCitySelected, setLatitu
             ))}
           </Select>
         </FormControl>
-        {console.log(selectedCity)}
       </div>
     </div>
   );

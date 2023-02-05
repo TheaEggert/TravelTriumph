@@ -17,8 +17,8 @@ export default function Weather({latitude, longitude}) {
         const result = await axios(apiURL);
         setConditions(result.data.weather[0].main);
         setTemp(Math.round(result.data.main.temp));
-        setLo(Math.round(result.data.main.temp_min));
         setHi(Math.round(result.data.main.temp_max));
+        setLo(Math.round(result.data.main.temp_min));
         setIcon(result.data.weather[0].icon);
     }, [apiURL]);
 
@@ -40,10 +40,10 @@ export default function Weather({latitude, longitude}) {
             </div>
             <br></br>
             <div>
-                {"L:" + lo}&deg;C
+                {"H: " + hi}&deg;C
             </div>
             <div>
-                {"H:" + hi}&deg;C
+                {"L: " + lo}&deg;C
             </div>
         </div>
     );
