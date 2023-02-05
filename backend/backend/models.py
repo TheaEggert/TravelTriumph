@@ -1,5 +1,10 @@
 from django.db import models
-import uuid
+
+'''
+Custom city model for TravelTriumph
+"name" is the primary key, while "label" is the displayed name of the city
+example: name = "new-york", label = "New York"
+'''
 
 class City(models.Model):
     name = models.CharField(primary_key=True, max_length=100)
