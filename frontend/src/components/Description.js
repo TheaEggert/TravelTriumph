@@ -1,3 +1,5 @@
+import React from 'react'; // for testing, we need to import React everywhere
+
 export default function Description({appDescription}) {
 
     return(
