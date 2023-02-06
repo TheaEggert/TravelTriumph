@@ -66,6 +66,7 @@ export default function Selection({setAppDescription, setCitySelected, setLatitu
         <FormControl sx={{ m: 1, width: '45%' }}>
           <InputLabel id="selection-label">Select a city</InputLabel>
           <Select
+            id='selection-bar'
             value={selectedCity}
             onChange={handleChange}
             input={<BootstrapInput />}
