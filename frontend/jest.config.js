@@ -1,18 +1,12 @@
 /** @type {import('jest').Config} */
 const config = {
+    testEnvironment: 'jsdom',
     transform: {
-        '^.+\\.(js|jsx)$': 'babel-jest'
+        '^.+\\.(js|jsx)$': 'babel-jest',
+        '^.+\\.css$': 'jest-transform-css'
     },
     transformIgnorePatterns: [
-        'node_modules/(?!' + 
-            [
-                'node-fetch',
-                'fetch-blob',
-                'data-uri-to-buffer',
-                'jest-runtime',
-                'formdata-polyfill'
-            ].join('|') +
-        ')',
+        'node_modules/(?!axios)'
     ]
 };
 

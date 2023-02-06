@@ -1,3 +1,4 @@
+import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import Selection from '../Selection';
 import axios from 'axios';
@@ -29,10 +30,10 @@ const dummyCities = [
 ];
 
 test("cities list", async () => {
-    axios.get.mockResolvedValue({data: dummyCities});
+    cityList = axios.get.mockResolvedValue({data: dummyCities});
     render(<Selection />);
 
-    const cityList = await waitFor(() => screen.findAllByTestId("city-list"));
+    const cityList = await waitFor(() => screen.findAllByTestId("name"));
 
     expect(cityList).toHaveLength(3);
 });
