@@ -29,6 +29,8 @@ Single-page web application for travel planning
 
 ### Stats for nerds
 
+Designed using: Figma
+
 Initialized using: create-react-app
 
 Front end framework: React 18.2.0
@@ -45,3 +47,7 @@ Deployed with: Heroku
    - For the first time on: 6 Feb 2023 at 2:17PM MST
    
 Other languages and tools used: HTML, CSS, JavaScript, JSX, Python
+
+Greenfield: yes
+
+Open-source: yes (see license)
