@@ -33,20 +33,24 @@ Designed using: Figma
 
 Initialized using: create-react-app
 
-Front end framework: React 18.2.0
+Front end framework: React
 
-Back end framework: Django 4.1.5
+Back end framework: Django
 
-DBMS: SQLite 3.39.4
+DBMS: SQLite
 
-Front end testing frameworks: Jest 29.4.1, Cypress 12.5.1
+Front end testing frameworks
+   - Unit: React testing library, Jest
+   - E2E: Cypress
 
-Back end testing framework: unittest (Python lib)
+Back end testing framework: unittest
 
 Deployed with: Heroku
    - For the first time on: 6 Feb 2023 at 2:17PM MST
    
-Other languages and tools used: HTML, CSS, JavaScript, JSX, Python, JSON
+Other technologies: HTML, CSS, JavaScript, JSX, Python, JSON, MUI, NPM, Node, pip, React icons, Webpack, Babel
+
+...and more!
 
 Greenfield: yes
 
