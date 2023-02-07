@@ -26,3 +26,22 @@ Single-page web application for travel planning
     - Temperature low (e.g. "L: 10°C")
 6. To check out another city, return to step 3.
 7. Have fun!
+
+### Stats for nerds
+
+Initialized using: create-react-app
+
+Front end framework: React 18.2.0
+
+Back end framework: Django 4.1.5
+
+DBMS: SQLite 3.39.4
+
+Front end testing frameworks: Jest 29.4.1, Cypress 12.5.1
+
+Back end testing framework: unittest (Python lib)
+
+Deployed with: Heroku
+   - For the first time on: 6 Feb 2023 at 2:17PM MST
+   
+Other languages and tools used: HTML, CSS, JavaScript, JSX, Python
