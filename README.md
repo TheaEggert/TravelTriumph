@@ -4,6 +4,7 @@ Single-page web application for travel planning
 ### How to use this app
 *Required installations: none*
 1. Visit the webapp by entering this URL in your address bar: [https://travel-triumph.herokuapp.com](https://travel-triumph.herokuapp.com)
+   - This can be done on a PC/desktop browser (e.g. Firefox for Windows), or on a mobile browser (e.g. Safari for iOS).
 2. The page should look a little bit like this:
 ---
 ![TT](https://user-images.githubusercontent.com/68571255/217157821-3bcca38a-8879-4c64-8ca4-027dff9df869.png)
@@ -12,6 +13,7 @@ Single-page web application for travel planning
   **Troubleshooting**
   - If using Firefox and nothing appears, try turning Enhanced Tracking Protection off.
   - If you are shown text that reads "You need to enable JavaScript to run this app", enable JavaScript in your browser settings, then refresh the page.
+  - For the aforementioned or other problems, sometimes using a different browser can help resolve issues.
 ---
   
 3. Click/tap the "Select a city" dropdown to reveal a dropdown with five city names.
