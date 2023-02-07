@@ -1,5 +1,5 @@
 # TravelTriumph
-Single-page web application for travel planning
+Single-page travel planner application 
 
 ### How to use this app
 *Required installations: none*
