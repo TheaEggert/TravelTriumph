@@ -46,7 +46,7 @@ Back end testing framework: unittest (Python lib)
 Deployed with: Heroku
    - For the first time on: 6 Feb 2023 at 2:17PM MST
    
-Other languages and tools used: HTML, CSS, JavaScript, JSX, Python
+Other languages and tools used: HTML, CSS, JavaScript, JSX, Python, JSON
 
 Greenfield: yes
 
